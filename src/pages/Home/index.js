@@ -71,6 +71,33 @@ function Home() {
     },
   ]
 
+  const exclusiveData = [
+    {
+      id: 1,
+      image: 'https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/488/php7XnxK61695235731.png',
+      title: 'Produto 1',
+      description: 'Descrição do Produto 1'
+    },
+    {
+      id: 2,
+      image: 'https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/488/phplsIwOt1695235795.png',
+      title: 'Produto 1',
+      description: 'Descrição do Produto 1'
+    },
+    {
+      id: 3,
+      image: 'https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/488/phpOMWT6r1675269469.png',
+      title: 'Produto 1',
+      description: 'Descrição do Produto 1'
+    },
+    {
+      id: 4,
+      image: 'https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/488/phpAbNOTK1682514895.png',
+      title: 'Produto 1',
+      description: 'Descrição do Produto 1'
+    },
+  ]
+
   return (
     <>
 
@@ -200,6 +227,74 @@ function Home() {
           ))}
         </div>
       </div>
+
+      <div className="yellow-line">
+        <p className="placeholder-text">Confira nossa seleção completa de rótulos</p>
+        <Button label="Loja Online" className="p-button-secondary" />
+      </div>
+
+      <div className='bg-danger vw-100'>
+        <Image src="https://assets.betalabs.net/production/vinhosdebicicleta/images/stores/1/t-homeexclusivos.png"
+          alt="Image" width="30%"
+          style={{
+            marginTop: '30px', marginLeft: '650px',
+          }}
+        />
+
+        <div className="container mt-4">
+          <div className="row">
+            {exclusiveData.map((product) => (
+              <div key={product.id} className="col-md-3 mb-4">
+                <div className="card p-3 h-80 ">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="card-img-top"
+                    style={{ maxWidth: '30%', height: 'auto', }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{product.title}</h5>
+                    <p className="card-text">{product.description}</p>
+                    <div className="text-center">
+                      <button className="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      <div className="yellow-line">
+        <p className="placeholder-text">Confira nossa seleção completa de rótulos</p>
+        <Button label="Loja Online" className="p-button-secondary" />
+      </div>
+
+      <div className='bg-dark vw-100 d-flex flex-column align-items-start justify-content-center'>
+        <Image
+          src="https://assets.betalabs.net/production/vinhosdebicicleta/images/stores/1/t-homeconteudosemana.png"
+          alt="Image"
+          width="50%"
+          className="mt-4"
+          style={{ marginLeft: '630px' }}
+        />
+        <div className="text-center" style={{ marginLeft: '460px', marginTop: '90px' }}>
+          <iframe
+            width="810"
+            height="456"
+            src="https://www.youtube.com/embed/ZnMeEYzvQdA?si=aoyoO5TIHiKgZjHD"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+
+
+
 
 
     </>

@@ -35,6 +35,28 @@
   
 }
 
+.newsletter-line {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  
+}
+
+.newsletter-text {
+  color: white;
+  font-size: 50px;
+  margin-right: 150px;
+  left: 300px;
+}
+
+.newsletter-text-2 {
+  color: white;
+  font-size: 25px;
+  margin-right: 150px;
+}
+
 /* Estilo para o botão ao lado do texto */
 .p-button-secondary {
   background-color: #c58d3d;
@@ -43,4 +65,16 @@
   
 }
 
+.yellow-line {
+  background-color: #c88c3c;
+  height: 5px;
+  width: 100vw;
+  text-align: center;
+  padding: 30px 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  display: flex; /* Adiciona um display flex para os itens ficarem em linha */
+  justify-content: center; /* Centraliza os itens na linha */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
 
