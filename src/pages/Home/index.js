@@ -280,9 +280,9 @@ function Home() {
           alt="Image"
           width="50%"
           className="mt-4"
-          style={{ marginLeft: '630px' }}
+          style={{position: 'relative', left: '680px' }}
         />
-        <div className="text-center" style={{ marginLeft: '460px', marginTop: '90px' }}>
+        <div className="text-center" style={{ position: 'relative', left: '490px', marginTop: '40px' }}>
           <iframe
             width="810"
             height="456"

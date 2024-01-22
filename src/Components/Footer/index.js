@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function RodaPé() {
     return (
         <>
-            <div className="newsletter-line">
+            {/* <div className="newsletter-line">
                 <p className="newsletter-text">NEWSLETTER</p>
                 <p className="newsletter-text-2">Receba nossas novidades e promoções por email
                 </p>
@@ -22,7 +22,7 @@ function RodaPé() {
                         <FormControl type="text" placeholder="Digite seu E-Mail..." className="mr-sm-2" />
                     </Form>
                 </div>
-            </div>
+            </div> */}
 
             <footer className="footer">
                 <div className="container">

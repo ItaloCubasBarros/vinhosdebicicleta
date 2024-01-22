@@ -1,0 +1,45 @@
+
+.text-information{
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.cardStyle {
+    position: relative;
+    width: 230px;
+    height: 30px; 
+    left: 360px;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.cardStyle:Hover {
+    position: relative;
+    width: 230px;
+    height: 30px; 
+    left: 360px;
+    border: 0.5px solid #87212E;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.Links {
+    position: relative;
+    font-weight: bold;
+    
+    color: #696969 !important; /* Cor do texto */
+    text-decoration: none !important; /* Remover sublinhado */
+    left: 30px;
+    top: 5px;
+}
+
+.Links:hover {
+    text-decoration: none !important; /* Remover sublinhado ao passar o mouse */
+    color: #87212E !important; /* Cor do texto ao passar o mouse */
+}
+
