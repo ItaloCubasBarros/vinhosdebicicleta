@@ -3,6 +3,8 @@ import React, {useState} from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown,Form, FormControl, Button } from 'react-bootstrap';
+import './TopBar.css'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -32,10 +34,12 @@ function TopBar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
+          <div className='Search'>
         <Form inline>
             <FormControl type="text" placeholder="Encontre seu vinho..." className="mr-sm-2" />
-            <Button variant="outline-primary"><FontAwesomeIcon icon={faSearch} /></Button>
+            <Button variant="outline-primary"><FontAwesomeIcon className="SearchIcon" size='30px' icon={faSearch} /></Button>
           </Form>
+          </div>
           <li className="nav-item active">
             <a className="nav-link" href="#">
               Clube de Assinatura
@@ -87,9 +91,10 @@ function TopBar() {
             </a>
           </li>
         </ul>
+        <div className="user-links">
         <Nav.Link href="#"><FontAwesomeIcon icon={faUser} /> Login </Nav.Link>
         <Nav.Link href="#"><FontAwesomeIcon icon={faShoppingCart} />Carrinho </Nav.Link>
-        
+        </div>
       </div>
     </div>
   </nav>

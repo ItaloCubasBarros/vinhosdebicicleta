@@ -1,6 +1,8 @@
 //index.js do HOME
 import React, { useState } from 'react'
 import TopBar from '../../Components/TopBar'
+import RodaPé from '../../Components/Footer';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -192,8 +194,8 @@ function Home() {
 
 
       <div className="red-line">
-        <p className="placeholder-text">Confira nossa seleção completa de rótulos</p>
-        <Button label="Loja Online" className="p-button-secondary" />
+        <p className="redline-text">Confira nossa seleção completa de rótulos</p>
+        <Button label="Loja Online" className="btn btn-warning" />
       </div>
 
       <div className='container'>
@@ -229,8 +231,8 @@ function Home() {
       </div>
 
       <div className="yellow-line">
-        <p className="placeholder-text">Confira nossa seleção completa de rótulos</p>
-        <Button label="Loja Online" className="p-button-secondary" />
+        <p className="yellowline-text">Confira nossa seleção completa de rótulos</p>
+        <Button label="Loja Online" className="btn btn-danger" />
       </div>
 
       <div className='bg-danger vw-100'>
@@ -268,8 +270,8 @@ function Home() {
       </div>
 
       <div className="yellow-line">
-        <p className="placeholder-text">Confira nossa seleção completa de rótulos</p>
-        <Button label="Loja Online" className="p-button-secondary" />
+        <p className="yellowline-text">Confira nossa seleção completa de rótulos</p>
+        <Button label="Loja Online" className="btn btn-danger" />
       </div>
 
       <div className='bg-dark vw-100 d-flex flex-column align-items-start justify-content-center'>
@@ -295,7 +297,7 @@ function Home() {
 
 
 
-
+    <RodaPé />
 
     </>
   )

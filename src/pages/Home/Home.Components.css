@@ -28,7 +28,13 @@
 }
 
 /* Estilo para o texto placeholder dentro da linha vermelha */
-.placeholder-text {
+.redline-text {
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+  
+}
+.yellowline-text {
   color: white;
   font-size: 25px;
   margin-right: 20px;
