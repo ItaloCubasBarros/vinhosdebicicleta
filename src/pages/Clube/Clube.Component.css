@@ -1,0 +1,134 @@
+.image-vinho {
+    position: relative;
+    left: -10px;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+
+}
+
+
+.pricing-card {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.pricing-card h2 {
+    color: #333;
+}
+
+.pricing-card p.price {
+    font-size: 24px;
+    color: #4caf50;
+    margin: 10px 0;
+}
+
+.advantages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advantages-list li {
+    padding: 5px 0;
+    color: #666;
+}
+
+.pricing-card button {
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #fff;
+    /* Adicionei esta regra para garantir que o texto seja branco */
+}
+
+.pricing-card button:hover {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+
+.text-area {
+    padding: 20px;
+}
+
+.text-area h3 {
+    font-size: 24px;
+    color: #ff5555;
+    /* Vermelho escuro */
+}
+
+.text-area p {
+    font-size: 16px;
+    color: #ccc;
+    /* Cinza claro */
+}
+
+/* Estilo para a imagem no meio */
+.image-vinho img {
+    border-radius: 10px;
+}
+
+/* Estilo para a área direita */
+.text-area:last-child {
+    padding: 20px;
+}
+
+.text-area:last-child h3 {
+    font-size: 24px;
+    color: #ff5555;
+    /* Vermelho escuro */
+}
+
+.text-area:last-child ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-area:last-child ul li {
+    font-size: 16px;
+    color: #ff5555;
+    /* Cinza claro */
+    margin-bottom: 10px;
+}
+
+.text-area:last-child button {
+    font-size: 18px;
+}
+
+/* Botão */
+.text-area button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.text-area button:hover {
+    background-color: #ff5555;
+    /* Vermelho escuro no hover */
+}
+
+.depoimentos-section {
+    background-color: #333;
+    padding: 40px 0;
+}
+
+.depoimento-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento-card p {
+    margin-top: 10px;
+    color: #333;
+}

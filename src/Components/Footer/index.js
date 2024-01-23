@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Link } from "react-router-dom";
 // import { Navbar, Nav, NavDropdown,Form, FormControl,} from 'react-bootstrap';
 
-function RodaPé() {
+function Rodape() {
     return (
         <>
             {/* <div className="newsletter-line">
@@ -87,4 +87,4 @@ function RodaPé() {
     )
 }
 
-export default RodaPé
+export default Rodape

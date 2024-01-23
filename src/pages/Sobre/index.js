@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TopBar from '../../Components/TopBar'
-import RodaPé from '../../Components/Footer';
+import Rodape from '../../Components/Footer';
 
 import './Sobre.Component.css'
 import { Accordion, AccordionTab } from 'primereact/accordion';
@@ -15,7 +15,7 @@ function Sobre() {
             <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
                     {/* Cada link em um quadrado separado */}
-                    <div className='cardStyle'>
+                    <div className='cardStyle active'>
                         <Link className='Links'  to="/">Nossa Essência</Link>
                     </div>
                     <div className='cardStyle'>
@@ -47,7 +47,7 @@ function Sobre() {
             </div>
         
 
-            <RodaPé />
+            <Rodape />
         </>
     )
 }

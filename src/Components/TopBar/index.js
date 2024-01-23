@@ -44,9 +44,9 @@ function TopBar() {
                 </Form>
               </div>
               <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Clube de Assinatura
-                </a>
+              <Link to='/Clube'  className="nav-link active" aria-current="page">
+                  Clube
+                </Link>
               </li>
               <NavDropdown
                 title="Vinhos"

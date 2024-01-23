@@ -1,7 +1,7 @@
 //index.js do HOME
 import React, { useState } from 'react'
 import TopBar from '../../Components/TopBar'
-import RodaPé from '../../Components/Footer';
+import Rodape from '../../Components/Footer';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Image } from 'primereact/image';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
-
+import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
 import Container from '../../Components/Container';
 
 import './Home.Components.css';
@@ -45,6 +47,14 @@ function Home() {
     },
 
   ];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   const kitData = [
     {
@@ -104,45 +114,43 @@ function Home() {
     <>
 
       <TopBar />
-
-
-      <Carousel className="fullscreen-carousel">
-        <Carousel.Item>
+      <Slider {...settings}>
+        <div>
           <img
             className="d-block w-100"
             src="https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/492/phpXPNjKG1705513344.png"
             alt="First slide"
           />
-        </Carousel.Item>
-        <Carousel.Item>
+        </div>
+        <div>
           <img
             className="d-block w-100"
             src="https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/492/phpkLkt0r1704370469.png"
             alt="Second slide"
           />
-        </Carousel.Item>
-        <Carousel.Item>
+        </div>
+        <div>
           <img
             className="d-block w-100"
             src="https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/492/phpovkxMZ1704370690.png"
             alt="Third slide"
           />
-        </Carousel.Item>
-        <Carousel.Item>
+        </div>
+        <div>
           <img
             className="d-block w-100"
             src="https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/492/phpgXMgoN1675275191.png"
             alt="Fourth slide"
           />
-        </Carousel.Item>
-        <Carousel.Item>
+        </div>
+        <div>
           <img
             className="d-block w-100"
             src="https://assets.betalabs.net/production/vinhosdebicicleta/extra_fields/492/phpKM2AmS1675275147.png"
             alt="Fifth slide"
           />
-        </Carousel.Item>
-      </Carousel>
+        </div>
+      </Slider>
 
 
       <div className="mt-1 d-flex justify-content-center align-items-center">
@@ -280,7 +288,7 @@ function Home() {
           alt="Image"
           width="50%"
           className="mt-4"
-          style={{position: 'relative', left: '680px' }}
+          style={{ position: 'relative', left: '680px' }}
         />
         <div className="text-center" style={{ position: 'relative', left: '490px', marginTop: '40px' }}>
           <iframe
@@ -297,7 +305,7 @@ function Home() {
 
 
 
-    <RodaPé />
+      <Rodape />
 
     </>
   )
